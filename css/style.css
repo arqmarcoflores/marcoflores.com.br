@@ -101,7 +101,7 @@ body, html {
 .caption {
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 30%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -118,6 +118,9 @@ body, html {
 .bgbox {
   background-color: rgba(0,0,0,0.6);
 }
+.fully {
+  height:100%;
+}
 
 h3 {
   letter-spacing: 5px;
@@ -126,10 +129,9 @@ h3 {
   color: #111;
 }
 
-/* Turn off parallax scrolling for tablets and phones 
+/* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
   }
 }
-*/
