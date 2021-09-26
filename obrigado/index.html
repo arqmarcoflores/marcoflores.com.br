@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Marco Flores - Arquiteto  e Urbanista</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <a href="https://marcoflores.com.br">
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-green w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <span class="icon-menu"></span>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hover-green"><span class="icon-logo w3-xxlarge"></span>Marco Flores</a>
+    <div class="w3-right">
+
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hover-green w3-hide-small "> Serviços</a>
+    <a href="#contato" class="w3-bar-item w3-button w3-hide-small w3-hover-green"> Contato</a>
+  </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hover-green" onclick="toggleFunction()">Serviços</a>
+    <a href="#contato" class="w3-bar-item w3-button w3-hover-green" onclick="toggleFunction()">Contato</a>
+  </div>
+</div>
+
+<div class="bgimg-1 opa9">
+
+  <div class="w3-container w3-center w3-display-middle w3-text-white w3-large  ">
+
+
+
+  <h3 class="w3-text-white bgbox">Obrigado, em breve entraremos em contato.</h2>
+
+   <span class=" icon-logo w3-jumbo"></span> 
+  </div>
+
+</div>
+<div id="sobre" class="w3-clear w3-margin-bottom"></div>
+
+
+</a>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-16">
+  <div class="w3-xlarge w3-section w3-text-black">
+   <!-- <span class="w3-text-black icon-instagram w3-hover-text-green"></span> -->
+    <a href="https://www.linkedin.com/in/marco-flores-17087b50/?originalSubdomain=br" target="_blank"><span class="icon-linkedin w3-text-black w3-hover-text-green"></span></a>
+    <a href="https://wa.me/554796622777" target="_blank"><span class="icon-whatsapp w3-text-black w3-hover-text-green"></i></a>
+  </div>
+  <p>Marco Flores - Arquiteto e Urbanista - 2021.</p>
+</footer>
+
+
+
+
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  </script>
+
+</body>
+</html>
