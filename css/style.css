@@ -66,6 +66,10 @@ body, html {
   color: #fff;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   
